@@ -14,15 +14,16 @@ public class AppInitializer {
         Transaction transaction = session.beginTransaction();
 
         Customer customer = new Customer();
-        customer.setId(4);
+        customer.setId(1);
         customer.setName("John Doe");
         customer.setAddress("Colombo");
         customer.setSalary(100000);
+        customer.setPhone(0715245263);
 
         session.save(customer);
         transaction.commit();
 
-        //////////////////////////////////////////////////////////////////////////////////////
+       //////////////////////////////////////////////////////////////////////////////////////
 
 //get session
 
